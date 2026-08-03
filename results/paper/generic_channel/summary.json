@@ -1,0 +1,12 @@
+{
+  "diagnostic_mode": "unmatched",
+  "K": 32,
+  "steps": 1800,
+  "positive_pairs": 921600,
+  "learned_channel_row_kl": 0.0005170187091256449,
+  "exact_kl_gap_max_abs_error": 4.440892098500626e-16,
+  "learned_kl_gap_mean_abs_error": 0.002006977795849059,
+  "fixed_gauge_max_tv": 3.2455210099092228e-15,
+  "free_gauge_max_tv": 0.6460061896777489,
+  "infonce_gauge_max_loss_change": 4.440892098500626e-16
+}

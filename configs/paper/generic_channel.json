@@ -1,0 +1,60 @@
+{
+  "n": 24,
+  "matched_modes": [
+    "matched",
+    "unmatched"
+  ],
+  "k_values": [
+    1,
+    4,
+    32
+  ],
+  "train_steps": [
+    50,
+    100,
+    180,
+    300,
+    500,
+    750,
+    1100,
+    1450,
+    1800
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "batch_size": 512,
+  "learning_rate": 0.04,
+  "learning_rate_schedule": "multistep",
+  "min_learning_rate": 0.0005,
+  "warmup_steps": 0,
+  "lr_milestone_fractions": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "lr_decay_gamma": 0.25,
+  "tail_average_fraction": null,
+  "gradient_accumulation_steps": 1,
+  "competitors": 80,
+  "gauge_lambdas": [
+    0.0,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ],
+  "sinkhorn_tol": 1e-11,
+  "outdir": "results/reproduced/generic_channel"
+}

@@ -1,0 +1,747 @@
+{
+  "common_max_rate": 7.529133547604278,
+  "config_fingerprint": "6a2d7cffb66f",
+  "diagnostics": [
+    {
+      "median": 0.603,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "coarse_centroid_accuracy",
+      "n": 3,
+      "q10": 0.6026,
+      "q90": 0.6082000000000001
+    },
+    {
+      "median": 78.59204572050345,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "effective_rank",
+      "n": 3,
+      "q10": 78.54340505114689,
+      "q90": 78.87153107879328
+    },
+    {
+      "median": 0.458,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "fine_centroid_accuracy",
+      "n": 3,
+      "q10": 0.456,
+      "q90": 0.4592
+    },
+    {
+      "median": 0.08822230994701385,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "mean_coordinate_std",
+      "n": 3,
+      "q10": 0.08821094930171966,
+      "q90": 0.08823147118091583
+    },
+    {
+      "median": 0.0005522638093680143,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "mean_pair_cosine",
+      "n": 3,
+      "q10": 0.0001754291879478842,
+      "q90": 0.0006219140253961086
+    },
+    {
+      "median": 0.11513932049274445,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "std_pair_cosine",
+      "n": 3,
+      "q10": 0.11462456881999969,
+      "q90": 0.11644571721553802
+    },
+    {
+      "median": 0.59,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "coarse_centroid_accuracy",
+      "n": 3,
+      "q10": 0.5876,
+      "q90": 0.5956
+    },
+    {
+      "median": 159.59661662839738,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "effective_rank",
+      "n": 3,
+      "q10": 158.75539067959198,
+      "q90": 159.78621495765913
+    },
+    {
+      "median": 0.4695,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "fine_centroid_accuracy",
+      "n": 3,
+      "q10": 0.4627,
+      "q90": 0.4723
+    },
+    {
+      "median": 0.037683531641960144,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "mean_coordinate_std",
+      "n": 3,
+      "q10": 0.03767267167568207,
+      "q90": 0.03772616386413574
+    },
+    {
+      "median": 0.2550693452358246,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "mean_pair_cosine",
+      "n": 3,
+      "q10": 0.2548392713069916,
+      "q90": 0.25551125407218933
+    },
+    {
+      "median": 0.09194916486740112,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "std_pair_cosine",
+      "n": 3,
+      "q10": 0.09083833694458007,
+      "q90": 0.09231207370758057
+    },
+    {
+      "median": 0.176,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "coarse_centroid_accuracy",
+      "n": 3,
+      "q10": 0.176,
+      "q90": 0.176
+    },
+    {
+      "median": 0.091,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "fine_centroid_accuracy",
+      "n": 3,
+      "q10": 0.091,
+      "q90": 0.091
+    },
+    {
+      "median": 0.007934518158435822,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "mean_coordinate_std",
+      "n": 3,
+      "q10": 0.007934518158435822,
+      "q90": 0.007934518158435822
+    },
+    {
+      "median": 0.8055996894836426,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "mean_pair_cosine",
+      "n": 3,
+      "q10": 0.8055356502532959,
+      "q90": 0.8056764125823974
+    },
+    {
+      "median": 0.09355288743972778,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "std_pair_cosine",
+      "n": 3,
+      "q10": 0.09335180521011352,
+      "q90": 0.09378286600112914
+    },
+    {
+      "median": 0.1525,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "coarse_centroid_accuracy",
+      "n": 3,
+      "q10": 0.15209999999999999,
+      "q90": 0.1577
+    },
+    {
+      "median": 29.15976959307125,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "effective_rank",
+      "n": 3,
+      "q10": 28.792604005336116,
+      "q90": 32.1912939267894
+    },
+    {
+      "median": 0.073,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "fine_centroid_accuracy",
+      "n": 3,
+      "q10": 0.065,
+      "q90": 0.0746
+    },
+    {
+      "median": 0.010678612627089024,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "mean_coordinate_std",
+      "n": 3,
+      "q10": 0.010204959847033023,
+      "q90": 0.01181886363774538
+    },
+    {
+      "median": 0.984922468662262,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "mean_pair_cosine",
+      "n": 3,
+      "q10": 0.9815372109413147,
+      "q90": 0.9862344861030579
+    },
+    {
+      "median": 0.006212100852280855,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "std_pair_cosine",
+      "n": 3,
+      "q10": 0.00527633847668767,
+      "q90": 0.007650175038725138
+    },
+    {
+      "median": 0.831,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "coarse_centroid_accuracy",
+      "n": 3,
+      "q10": 0.8306,
+      "q90": 0.8358
+    },
+    {
+      "median": 85.01551939513271,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "effective_rank",
+      "n": 3,
+      "q10": 84.99400645867712,
+      "q90": 85.08591763697561
+    },
+    {
+      "median": 0.7715,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "fine_centroid_accuracy",
+      "n": 3,
+      "q10": 0.7647,
+      "q90": 0.7738999999999999
+    },
+    {
+      "median": 0.03817921504378319,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "mean_coordinate_std",
+      "n": 3,
+      "q10": 0.03816942200064659,
+      "q90": 0.03823355659842491
+    },
+    {
+      "median": 0.20762218534946442,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "mean_pair_cosine",
+      "n": 3,
+      "q10": 0.2068548709154129,
+      "q90": 0.20782289803028106
+    },
+    {
+      "median": 0.11853719502687454,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "std_pair_cosine",
+      "n": 3,
+      "q10": 0.11768866926431656,
+      "q90": 0.11882641464471817
+    }
+  ],
+  "headline_retention": 0.8,
+  "interpretation": {
+    "pass_criteria": [
+      "simclr_z beats pixel and random_z for coarse and fine retention over a broad rate range",
+      "coarse information is retained at lower rate than fine information",
+      "the pattern is stable across seeds"
+    ],
+    "primary_claim": "semantic information retained at equal RD rate",
+    "primary_method": "simclr_z"
+  },
+  "methods": [
+    "simclr_z",
+    "simclr_h",
+    "pixel",
+    "random_z",
+    "supervised_h"
+  ],
+  "plot_methods": [
+    "simclr_z",
+    "pixel",
+    "random_z",
+    "supervised_h"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "thresholds": [
+    {
+      "median_rate": 4.277583561096509,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 4.270953769186524,
+      "q90_rate": 4.282793472068566,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.265462651239789,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 6.2594035840434685,
+      "q90_rate": 6.270530760543821,
+      "target": 0.8
+    },
+    {
+      "median_rate": 6.862914719952977,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 6.857986352295964,
+      "q90_rate": 6.867136345409225,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.208235824333277,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 4.206003651416193,
+      "q90_rate": 4.2096211393251455,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.271818750888073,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 6.2696289915170125,
+      "q90_rate": 6.273277219102714,
+      "target": 0.8
+    },
+    {
+      "median_rate": 6.895530819093044,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 6.893959816637048,
+      "q90_rate": 6.896771807011004,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.236292723535932,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 4.226516961746172,
+      "q90_rate": 4.257805459394895,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.4080239416419875,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 6.4004912735721815,
+      "q90_rate": 6.427265646536838,
+      "target": 0.8
+    },
+    {
+      "median_rate": 7.046836249532248,
+      "method": "simclr_z",
+      "method_label": "InfoNCE critic space z",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 7.0408060435964455,
+      "q90_rate": 7.061677016881745,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.047488930560582,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 4.041300364761052,
+      "q90_rate": 4.058377720417334,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.118273400960694,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 6.108216139149916,
+      "q90_rate": 6.12721064140312,
+      "target": 0.8
+    },
+    {
+      "median_rate": 6.771079803007305,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 6.76407001812565,
+      "q90_rate": 6.77918878446797,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.024399217628086,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 4.02243178382872,
+      "q90_rate": 4.028850958256957,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.161840103557978,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 6.158782152452437,
+      "q90_rate": 6.165176240021896,
+      "target": 0.8
+    },
+    {
+      "median_rate": 6.836483724858536,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 6.834025867379096,
+      "q90_rate": 6.839424791216348,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.148589234813602,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 4.131527201741126,
+      "q90_rate": 4.151653838407084,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.341676424805942,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 6.332076474024441,
+      "q90_rate": 6.350654609458598,
+      "target": 0.8
+    },
+    {
+      "median_rate": 7.017349250923162,
+      "method": "simclr_h",
+      "method_label": "SimCLR encoder h",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 7.0102163429694135,
+      "q90_rate": 7.022990831189193,
+      "target": 0.9
+    },
+    {
+      "median_rate": 5.153261118607918,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 5.153252630399781,
+      "q90_rate": 5.153280754598118,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.795094424494541,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 6.795022069309973,
+      "q90_rate": 6.7952430274341955,
+      "target": 0.8
+    },
+    {
+      "median_rate": 7.232138777739558,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 7.232125906659458,
+      "q90_rate": 7.232145519101117,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.827892368581679,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 4.827770633974311,
+      "q90_rate": 4.827952905442072,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.619629185706061,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 6.619612258613736,
+      "q90_rate": 6.619664432042071,
+      "target": 0.8
+    },
+    {
+      "median_rate": 7.141247459980215,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 7.1412099479817766,
+      "q90_rate": 7.141266104413581,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.414888637041452,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 4.414798907948595,
+      "q90_rate": 4.414932880522418,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.357972744991644,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 6.357955628833068,
+      "q90_rate": 6.357981231615606,
+      "target": 0.8
+    },
+    {
+      "median_rate": 6.985561587406378,
+      "method": "pixel",
+      "method_label": "pixel MSE",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 6.985550408761997,
+      "q90_rate": 6.985567006473297,
+      "target": 0.9
+    },
+    {
+      "median_rate": 5.140379533588593,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 5.137373571007923,
+      "q90_rate": 5.155030273240946,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.781832922740721,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 6.7754692164093715,
+      "q90_rate": 6.78443803603671,
+      "target": 0.8
+    },
+    {
+      "median_rate": 7.219651338289278,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 7.216933767834231,
+      "q90_rate": 7.22473789091955,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.841559927157864,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 4.8400702304028025,
+      "q90_rate": 4.854629526799751,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.621670738717602,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 6.617676147136599,
+      "q90_rate": 6.623524450638306,
+      "target": 0.8
+    },
+    {
+      "median_rate": 7.127907041500715,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 7.124449320857328,
+      "q90_rate": 7.13020887892474,
+      "target": 0.9
+    },
+    {
+      "median_rate": 4.354018429704221,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 4.312894139441136,
+      "q90_rate": 4.374360665549738,
+      "target": 0.5
+    },
+    {
+      "median_rate": 6.293040366579958,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 6.277389619495015,
+      "q90_rate": 6.298916231841816,
+      "target": 0.8
+    },
+    {
+      "median_rate": 6.944012630156437,
+      "method": "random_z",
+      "method_label": "random encoder",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 6.93373463566771,
+      "q90_rate": 6.945919165899534,
+      "target": 0.9
+    },
+    {
+      "median_rate": 3.0910314042103675,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 3.0771243124967125,
+      "q90_rate": 3.09236835981976,
+      "target": 0.5
+    },
+    {
+      "median_rate": 4.913402741626805,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 4.9056726515090245,
+      "q90_rate": 4.9201932939451885,
+      "target": 0.8
+    },
+    {
+      "median_rate": 5.581435126882847,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "coarse_retention",
+      "n_reached": 3,
+      "q10_rate": 5.577537940952846,
+      "q90_rate": 5.5821592761851715,
+      "target": 0.9
+    },
+    {
+      "median_rate": 3.083829058402055,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 3.083731607580958,
+      "q90_rate": 3.0843077956790372,
+      "target": 0.5
+    },
+    {
+      "median_rate": 5.030373001464413,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 5.030356096470476,
+      "q90_rate": 5.041435851185415,
+      "target": 0.8
+    },
+    {
+      "median_rate": 5.735702334425921,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "fine_retention",
+      "n_reached": 3,
+      "q10_rate": 5.729396276543293,
+      "q90_rate": 5.7616907133461455,
+      "target": 0.9
+    },
+    {
+      "median_rate": 3.451079140752738,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 3.4421197753204886,
+      "q90_rate": 3.4854828543846987,
+      "target": 0.5
+    },
+    {
+      "median_rate": 5.541068443319055,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 5.518119735092047,
+      "q90_rate": 5.588431968433793,
+      "target": 0.8
+    },
+    {
+      "median_rate": 6.2460769232313265,
+      "method": "supervised_h",
+      "method_label": "supervised reference",
+      "metric": "fine_increment_retention",
+      "n_reached": 3,
+      "q10_rate": 6.218264311661356,
+      "q90_rate": 6.297384579969187,
+      "target": 0.9
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "macros": 2,
+  "micros_per_macro": 2,
+  "states_per_micro": 3,
+  "within_micro_cost": 1.2,
+  "within_macro_cost": 4.0,
+  "cross_macro_cost": 10.0,
+  "transition_beta": 0.65,
+  "seeds": [
+    0
+  ],
+  "representative_seed": 0,
+  "tau": 1.0,
+  "K": 4,
+  "train_steps": 100,
+  "batch_size": 128,
+  "learning_rate": 0.035,
+  "beta_min": 0.001,
+  "beta_max": 8.0,
+  "beta_points": 10,
+  "sinkhorn_tol": 1e-10,
+  "random_embedding_dim": 8,
+  "aggregate_grid_points": 60,
+  "save_per_seed_figures": false,
+  "outdir": "results/quick/markov"
+}

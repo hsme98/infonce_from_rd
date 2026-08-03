@@ -1,0 +1,213 @@
+{
+  "outroot": "results/pilot/optimizer_ablation",
+  "experiments": {
+    "pair_budget": {
+      "n": 24,
+      "matched_modes": [
+        "matched",
+        "unmatched"
+      ],
+      "k_values": [
+        1,
+        4,
+        32
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "checkpoint_unit": "positive_pairs",
+      "checkpoints": [
+        25600,
+        92160,
+        256000,
+        563200,
+        921600
+      ],
+      "variants": [
+        {
+          "name": "baseline",
+          "label": "constant, B=512",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "constant",
+          "min_learning_rate": 0.0,
+          "tail_average_fraction": null
+        },
+        {
+          "name": "cosine",
+          "label": "cosine decay",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "cosine",
+          "min_learning_rate": 0.0005,
+          "tail_average_fraction": null
+        },
+        {
+          "name": "multistep",
+          "label": "step decay",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "multistep",
+          "min_learning_rate": 0.0005,
+          "lr_milestone_fractions": [
+            0.2,
+            0.5,
+            0.8
+          ],
+          "lr_decay_gamma": 0.25,
+          "tail_average_fraction": null
+        },
+        {
+          "name": "tail_average",
+          "label": "tail average",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "constant",
+          "min_learning_rate": 0.0,
+          "tail_average_fraction": 0.5
+        },
+        {
+          "name": "cosine_tail",
+          "label": "cosine + average",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "cosine",
+          "min_learning_rate": 0.0005,
+          "tail_average_fraction": 0.5
+        },
+        {
+          "name": "large_batch",
+          "label": "constant, B=2048",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 4,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "constant",
+          "min_learning_rate": 0.0,
+          "tail_average_fraction": null
+        },
+        {
+          "name": "all_three",
+          "label": "decay + avg + B=2048",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 4,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "cosine",
+          "min_learning_rate": 0.0005,
+          "tail_average_fraction": 0.5
+        }
+      ],
+      "sinkhorn_tol": 1e-11
+    },
+    "step_budget": {
+      "n": 24,
+      "matched_modes": [
+        "matched",
+        "unmatched"
+      ],
+      "k_values": [
+        1,
+        4,
+        32
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "checkpoint_unit": "steps",
+      "checkpoints": [
+        50,
+        180,
+        500,
+        1100,
+        1800
+      ],
+      "variants": [
+        {
+          "name": "baseline",
+          "label": "constant, B=512",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "constant",
+          "min_learning_rate": 0.0,
+          "tail_average_fraction": null
+        },
+        {
+          "name": "cosine",
+          "label": "cosine decay",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "cosine",
+          "min_learning_rate": 0.0005,
+          "tail_average_fraction": null
+        },
+        {
+          "name": "multistep",
+          "label": "step decay",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "multistep",
+          "min_learning_rate": 0.0005,
+          "lr_milestone_fractions": [
+            0.2,
+            0.5,
+            0.8
+          ],
+          "lr_decay_gamma": 0.25,
+          "tail_average_fraction": null
+        },
+        {
+          "name": "tail_average",
+          "label": "tail average",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "constant",
+          "min_learning_rate": 0.0,
+          "tail_average_fraction": 0.5
+        },
+        {
+          "name": "cosine_tail",
+          "label": "cosine + average",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 1,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "cosine",
+          "min_learning_rate": 0.0005,
+          "tail_average_fraction": 0.5
+        },
+        {
+          "name": "large_batch",
+          "label": "constant, B=2048",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 4,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "constant",
+          "min_learning_rate": 0.0,
+          "tail_average_fraction": null
+        },
+        {
+          "name": "all_three",
+          "label": "decay + avg + B=2048",
+          "batch_size": 512,
+          "gradient_accumulation_steps": 4,
+          "learning_rate": 0.04,
+          "learning_rate_schedule": "cosine",
+          "min_learning_rate": 0.0005,
+          "tail_average_fraction": 0.5
+        }
+      ],
+      "sinkhorn_tol": 1e-11
+    }
+  }
+}

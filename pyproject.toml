@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infonce-rate-distortion-experiments"
+version = "1.0.0"
+description = "Sequential experiments for the finite-K InfoNCE and fixed-output rate-distortion correspondence"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3",
+  "matplotlib>=3.7,<4",
+  "pandas>=2.0,<3",
+  "tqdm>=4.66,<5",
+]
+
+[project.optional-dependencies]
+cifar = [
+  "torch>=2.4",
+  "torchvision>=0.19",
+]
+dev = [
+  "pytest>=8.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["itw_rd*", "itw_cifar_rd*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

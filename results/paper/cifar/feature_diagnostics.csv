@@ -1,0 +1,30 @@
+method,method_label,metric,n,median,q10,q90
+simclr_z,InfoNCE critic space z,coarse_centroid_accuracy,3,0.603,0.6026,0.6082000000000001
+simclr_z,InfoNCE critic space z,effective_rank,3,78.59204572050345,78.54340505114689,78.87153107879328
+simclr_z,InfoNCE critic space z,fine_centroid_accuracy,3,0.458,0.456,0.4592
+simclr_z,InfoNCE critic space z,mean_coordinate_std,3,0.08822230994701385,0.08821094930171966,0.08823147118091583
+simclr_z,InfoNCE critic space z,mean_pair_cosine,3,0.0005522638093680143,0.0001754291879478842,0.0006219140253961086
+simclr_z,InfoNCE critic space z,std_pair_cosine,3,0.11513932049274445,0.11462456881999969,0.11644571721553802
+simclr_h,SimCLR encoder h,coarse_centroid_accuracy,3,0.59,0.5876,0.5956
+simclr_h,SimCLR encoder h,effective_rank,3,159.59661662839738,158.75539067959198,159.78621495765913
+simclr_h,SimCLR encoder h,fine_centroid_accuracy,3,0.4695,0.4627,0.4723
+simclr_h,SimCLR encoder h,mean_coordinate_std,3,0.037683531641960144,0.03767267167568207,0.03772616386413574
+simclr_h,SimCLR encoder h,mean_pair_cosine,3,0.2550693452358246,0.2548392713069916,0.25551125407218933
+simclr_h,SimCLR encoder h,std_pair_cosine,3,0.09194916486740112,0.09083833694458007,0.09231207370758057
+pixel,pixel MSE,coarse_centroid_accuracy,3,0.176,0.176,0.176
+pixel,pixel MSE,fine_centroid_accuracy,3,0.091,0.091,0.091
+pixel,pixel MSE,mean_coordinate_std,3,0.007934518158435822,0.007934518158435822,0.007934518158435822
+pixel,pixel MSE,mean_pair_cosine,3,0.8055996894836426,0.8055356502532959,0.8056764125823974
+pixel,pixel MSE,std_pair_cosine,3,0.09355288743972778,0.09335180521011352,0.09378286600112914
+random_z,random encoder,coarse_centroid_accuracy,3,0.1525,0.15209999999999999,0.1577
+random_z,random encoder,effective_rank,3,29.15976959307125,28.792604005336116,32.1912939267894
+random_z,random encoder,fine_centroid_accuracy,3,0.073,0.065,0.0746
+random_z,random encoder,mean_coordinate_std,3,0.010678612627089024,0.010204959847033023,0.01181886363774538
+random_z,random encoder,mean_pair_cosine,3,0.984922468662262,0.9815372109413147,0.9862344861030579
+random_z,random encoder,std_pair_cosine,3,0.006212100852280855,0.00527633847668767,0.007650175038725138
+supervised_h,supervised reference,coarse_centroid_accuracy,3,0.831,0.8306,0.8358
+supervised_h,supervised reference,effective_rank,3,85.01551939513271,84.99400645867712,85.08591763697561
+supervised_h,supervised reference,fine_centroid_accuracy,3,0.7715,0.7647,0.7738999999999999
+supervised_h,supervised reference,mean_coordinate_std,3,0.03817921504378319,0.03816942200064659,0.03823355659842491
+supervised_h,supervised reference,mean_pair_cosine,3,0.20762218534946442,0.2068548709154129,0.20782289803028106
+supervised_h,supervised reference,std_pair_cosine,3,0.11853719502687454,0.11768866926431656,0.11882641464471817

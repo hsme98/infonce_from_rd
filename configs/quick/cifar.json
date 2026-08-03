@@ -1,0 +1,73 @@
+{
+  "experiment_name": "cifar100_semantic_rd_smoke",
+  "seeds": [
+    0
+  ],
+  "data": {
+    "root": "data/cifar100",
+    "eval_per_fine_class": 2,
+    "eval_subset_seed": 7,
+    "num_workers": 0,
+    "pin_memory": false
+  },
+  "model": {
+    "projection_hidden_dim": 128,
+    "projection_dim": 32
+  },
+  "simclr": {
+    "epochs": 1,
+    "batch_size": 128,
+    "lr": 0.05,
+    "momentum": 0.9,
+    "weight_decay": 1e-06,
+    "nesterov": true,
+    "warmup_epochs": 0,
+    "temperature": 0.2,
+    "checkpoint_every": 1,
+    "amp_dtype": "fp32"
+  },
+  "supervised": {
+    "epochs": 1,
+    "batch_size": 128,
+    "lr": 0.05,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "warmup_epochs": 0,
+    "label_smoothing": 0.0,
+    "checkpoint_every": 1,
+    "amp_dtype": "fp32"
+  },
+  "rd": {
+    "methods": [
+      "simclr_z",
+      "pixel",
+      "random_z",
+      "supervised_h"
+    ],
+    "feature_batch_size": 128,
+    "cost_scale_sample_pairs": 10000,
+    "beta_min": 0.05,
+    "beta_max": 32.0,
+    "beta_points": 7,
+    "adaptive_beta_extensions": 0,
+    "adaptive_beta_multiplier": 4.0,
+    "adaptive_target_fine_retention": 0.9,
+    "sinkhorn_dtype": "float32",
+    "sinkhorn_max_iter": 300,
+    "sinkhorn_tol": 1e-05,
+    "sinkhorn_check_every": 5,
+    "retention_thresholds": [
+      0.5,
+      0.8
+    ],
+    "headline_retention": 0.8,
+    "rate_grid_points": 80,
+    "plot_methods": [
+      "simclr_z",
+      "pixel",
+      "random_z",
+      "supervised_h"
+    ]
+  }
+}

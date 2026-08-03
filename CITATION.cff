@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this code."
+title: "InfoNCE and Rate-Distortion Experiments"
+type: software
+authors:
+  - family-names: Erol
+    given-names: Melihcan
+  - family-names: Ryu
+    given-names: J. Jon
+  - family-names: Zheng
+    given-names: Lizhong
+version: 1.0.0
+date-released: 2026-08-02
