@@ -114,23 +114,6 @@ is broader at intermediate rates. The experiment supports **semantic rate
 efficiency**; it does not establish a sharp coarse-before-fine phase
 transition on CIFAR-100.
 
-### 4. Why constant-learning-rate recovery curves flatten
-
-![Optimizer-floor ablation](assets/optimizer_ablation_final.png)
-
-At a fixed positive-pair budget, the aggregate median final row KL was:
-
-| Training rule | Median row KL | Reduction from constant LR |
-|---|---:|---:|
-| constant LR, batch 512 | \(9.23\times10^{-3}\) | -- |
-| cosine decay | \(8.99\times10^{-4}\) | 90.3% |
-| **multistep decay** | **\(6.60\times10^{-4}\)** | **92.8%** |
-| Polyak tail average | \(7.01\times10^{-4}\) | 92.4% |
-| constant LR, effective batch 2048 | \(4.37\times10^{-3}\) | 52.6% |
-
-The raw constant-step iterates fluctuate around a much better central score:
-tail averaging the same trajectory reduces the error by more than an order of
-magnitude. The paper configuration therefore uses multistep decay.
 
 ## Installation
 
